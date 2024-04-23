@@ -6,21 +6,21 @@ import MarqueeContainer from "../components/MarqueeContainer";
 
 const AboutUsSection = () => {
   return (
-    <section className="py-20 relative ">
+    <section className="py-20 relative h-fit">
       <MarqueeContainer marqueeText={"about us"} />
 
-      <div className="container flex md:gap-8 lg:gap-16">
+      <div className="container w-full flex md:gap-8 lg:gap-16">
         <img src={AboutUsAddImg} alt="Additional Image" />
         <div className="flex flex-col xl:justify-between gap-5 md:gap-14">
-          <div className="relative flex items-center justify-start ">
+          <div className="relative flex items-center justify- ">
             <h1 className="font-montserrat font-black text-6xl leading-[64px] text-white uppercase">
               about us
             </h1>
-            <img
+            {/* <img
               src={HeadingTextGradientColor}
               alt="Gradient Color"
               className="absolute -left-[20%]"
-            />
+            /> */}
           </div>
           <p className=" xl:w-2/3 font-montserrat text-xl md:text-2xl font-medium md:leading-[52px] text-white">
             Live2Drive is more than just a typical racing game, but rather a
