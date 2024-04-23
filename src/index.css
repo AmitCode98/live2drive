@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#100d1f];
+  }
+}
+
+/* .text-shadow {
+  text-shadow: 1.2px 1.2px 0 #7136bc, -1.2px -1.2px 0 #7136bc, 1.2px -1.2px 0 #7136bc,
+    -1.2px 1.2px 0 #7136bc, 1.2px 1.2px 0 #7136bc;
+} */
+
+.text-shadow {
+  text-shadow: 0.5px 0.5px 0 #7136bc, 0.5px -0.5px 0 #e97aeb,
+    -0.5px -0.5px 0 #e7c4e8, -0.5px 0.5px 0 #7136bc, 0.5px 0.5px 0 #e97aeb;
+}
+/* @layer base {
+  :root {
+    --primary: #100d1f;
+    --secondary: #e406b5;
+    --muted: #ff99a2;
+  }
+} */
+
+/* .alumni-sans {
+  font-family: "Alumni Sans", sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+} */
+/* @layer base {
+  body {
+    @apply w-full min-h-screen flex flex-col;
+  }
+} */
+
+/* font-family: "Alumni Sans", sans-serif; */
+/* font-family: "Montserrat", sans-serif; */
