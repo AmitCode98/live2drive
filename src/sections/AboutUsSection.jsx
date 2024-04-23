@@ -6,13 +6,13 @@ import MarqueeContainer from "../components/MarqueeContainer";
 
 const AboutUsSection = () => {
   return (
-    <section className="py-20 relative">
+    <section className="py-20 relative ">
       <MarqueeContainer marqueeText={"about us"} />
 
       <div className="container flex md:gap-8 lg:gap-16">
         <img src={AboutUsAddImg} alt="Additional Image" />
         <div className="flex flex-col xl:justify-between gap-5 md:gap-14">
-          <div className="relative flex items-center justify-start">
+          <div className="relative flex items-center justify-start ">
             <h1 className="font-montserrat font-black text-6xl leading-[64px] text-white uppercase">
               about us
             </h1>
