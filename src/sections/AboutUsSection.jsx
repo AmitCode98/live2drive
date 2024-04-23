@@ -6,7 +6,7 @@ import MarqueeContainer from "../components/MarqueeContainer";
 
 const AboutUsSection = () => {
   return (
-    <section className="py-20 relative border">
+    <section className="py-20 relative">
       <MarqueeContainer marqueeText={"about us"} />
 
       <div className="container flex md:gap-8 lg:gap-16">
