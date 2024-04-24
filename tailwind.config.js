@@ -17,13 +17,20 @@ export default {
       },
     },
     extend: {
+      // gradientColorStops: theme => ({
+      //   'custom-gradient': {
+      //     'start': '#5E0616',
+      //     'end': '#DA00B7',
+      //   },
+      // }),
       colors: {
         background: "#100d1f",
+        muted: "#BFBFBF"
         // Define other colors here if needed
       },
       fontFamily: {
-        'alumni-sans': ["Alumni Sans",'sans-serif'],
-        'montserrat': ["Montserrat",'sans-serif'],
+        'alumni-sans': ["Alumni Sans", 'sans-serif'],
+        'montserrat': ["Montserrat", 'sans-serif'],
       },
     },
   },
