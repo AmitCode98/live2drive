@@ -1,6 +1,8 @@
 import React from "react";
 import MarqueeContainer from "../components/MarqueeContainer";
-import CarImg from "../assets/images/car-img.png";
+import CarImg1 from "../assets/images/car-img1.png";
+import CarImg2 from '../assets/images/car-img2.png';
+import CarImg3 from '../assets/images/car-img3.png';
 import BnbIcon from "../assets/icons/bnb-icon.svg";
 import HeartIcon from "../assets/icons/heart-icon.svg";
 
@@ -19,7 +21,7 @@ const NftMarketplace = () => {
         /> */}
       </div>
 
-      <div className="container ">
+      <div className="container py-20">
         <h2 className="font-montserrat font-black text-5xl uppercase text-white">
           car type
         </h2>
@@ -32,7 +34,7 @@ const NftMarketplace = () => {
                 src={HeartIcon}
                 className="absolute right-3 top-3 p-3 bg-white rounded-full  "
               />
-              <img src={CarImg} alt="img" />
+              <img src={CarImg1} alt="img" />
               <h1 className="text-white text-center font-montserrat font-black text-3xl uppercase">
                 CHIMERA
               </h1>
@@ -47,14 +49,14 @@ const NftMarketplace = () => {
                 </div>
                 <div>
                   <div className="w-full border outer-border rounded-md">
-                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[56%] rounded-sm"></div>
+                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[66%] rounded-sm"></div>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex justify-between">
                   <h4 className="font-montserrat text-base font-bold uppercase text-white ">
-                    speed
+                  HANDLING
                   </h4>
                   <p className="font-montserrat font-light text-base text-muted">
                     56%
@@ -62,14 +64,14 @@ const NftMarketplace = () => {
                 </div>
                 <div>
                   <div className="w-full border outer-border rounded-md">
-                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[56%] rounded-sm"></div>
+                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[36%] rounded-sm"></div>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex justify-between">
                   <h4 className="font-montserrat text-base font-bold uppercase text-white ">
-                    speed
+                  HOOVERING
                   </h4>
                   <p className="font-montserrat font-light text-base text-muted">
                     56%
@@ -77,7 +79,7 @@ const NftMarketplace = () => {
                 </div>
                 <div>
                   <div className="w-full border outer-border rounded-md">
-                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[56%] rounded-sm"></div>
+                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[86%] rounded-sm"></div>
                   </div>
                 </div>
               </div>
@@ -94,9 +96,9 @@ const NftMarketplace = () => {
                 src={HeartIcon}
                 className="absolute right-3 top-3 p-3 bg-white rounded-full  "
               />
-              <img src={CarImg} alt="img" />
+              <img src={CarImg2} alt="img" />
               <h1 className="text-white text-center font-montserrat font-black text-3xl uppercase">
-                CHIMERA
+              BONBON
               </h1>
               <div className="flex flex-col gap-2">
                 <div className="flex justify-between">
@@ -109,14 +111,14 @@ const NftMarketplace = () => {
                 </div>
                 <div>
                   <div className="w-full border outer-border rounded-md">
-                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[56%] rounded-sm"></div>
+                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[46%] rounded-sm"></div>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex justify-between">
                   <h4 className="font-montserrat text-base font-bold uppercase text-white ">
-                    speed
+                  HANDLING
                   </h4>
                   <p className="font-montserrat font-light text-base text-muted">
                     56%
@@ -124,14 +126,14 @@ const NftMarketplace = () => {
                 </div>
                 <div>
                   <div className="w-full border outer-border rounded-md">
-                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[56%] rounded-sm"></div>
+                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[86%] rounded-sm"></div>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex justify-between">
                   <h4 className="font-montserrat text-base font-bold uppercase text-white ">
-                    speed
+                  HANDLING
                   </h4>
                   <p className="font-montserrat font-light text-base text-muted">
                     56%
@@ -139,7 +141,7 @@ const NftMarketplace = () => {
                 </div>
                 <div>
                   <div className="w-full border outer-border rounded-md">
-                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[56%] rounded-sm"></div>
+                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[36%] rounded-sm"></div>
                   </div>
                 </div>
               </div>
@@ -156,7 +158,7 @@ const NftMarketplace = () => {
                 src={HeartIcon}
                 className="absolute right-3 top-3 p-3 bg-white rounded-full  "
               />
-              <img src={CarImg} alt="img" />
+              <img src={CarImg3} alt="img" />
               <h1 className="text-white text-center font-montserrat font-black text-3xl uppercase">
                 CHIMERA
               </h1>
@@ -171,14 +173,14 @@ const NftMarketplace = () => {
                 </div>
                 <div>
                   <div className="w-full border outer-border rounded-md">
-                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[56%] rounded-sm"></div>
+                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[76%] rounded-sm"></div>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex justify-between">
                   <h4 className="font-montserrat text-base font-bold uppercase text-white ">
-                    speed
+                  HANDLING
                   </h4>
                   <p className="font-montserrat font-light text-base text-muted">
                     56%
@@ -193,7 +195,7 @@ const NftMarketplace = () => {
               <div className="flex flex-col gap-2">
                 <div className="flex justify-between">
                   <h4 className="font-montserrat text-base font-bold uppercase text-white ">
-                    speed
+                  HANDLING
                   </h4>
                   <p className="font-montserrat font-light text-base text-muted">
                     56%
@@ -201,7 +203,7 @@ const NftMarketplace = () => {
                 </div>
                 <div>
                   <div className="w-full border outer-border rounded-md">
-                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[56%] rounded-sm"></div>
+                    <div className="h-4 bg-gradient-to-r from-[#5E0616] to-[#DA00B7] w-[66%] rounded-sm"></div>
                   </div>
                 </div>
               </div>
