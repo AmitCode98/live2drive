@@ -31,6 +31,7 @@ export default {
       fontFamily: {
         'alumni-sans': ["Alumni Sans", 'sans-serif'],
         'montserrat': ["Montserrat", 'sans-serif'],
+        'red-hat-display':["Red Hat Display", 'sans-serif']
       },
     },
   },
