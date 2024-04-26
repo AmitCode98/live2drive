@@ -28,9 +28,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-10 border-t border-muted">
+    <footer className="pt-16  " style={{ backgroundColor: 'rgba(217, 217, 217, 0.01)' }}>
       {/* footer two column */}
-      <div className=" container flex items-end justify-between">
+      <div className=" container py-10 flex items-end justify-between border-t border-muted">
         {/* first column */}
         <div className="flex flex-col gap-7 w-[26%] border-r border-muted p-10">
           <div className="relative flex items-center justify-center">

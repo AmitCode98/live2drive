@@ -5,10 +5,11 @@ import NftHubImg from "../assets/images/nft-hub-img.png";
 import BaseCardImg from "../assets/images/base-card-img.png";
 import FuturisticEnvironmentImg from "../assets/images/futuristic-environment-img.png";
 import keyFeaturesAddImg from "../assets/images/key-features-add-img.png";
+import ArrowImg from '../assets/images/arrow-top-img.png'
 
 const KeyFeatures = () => {
   return (
-    <section className="relative ">
+    <section className="relative  my-20 ">
         
       <div className="relative flex items-center justify-center overflow-hidde">
         <MarqueeContainer marqueeText={"key features"} />
@@ -21,12 +22,15 @@ const KeyFeatures = () => {
           className="absolute"
         />
       </div>
-      <div className="container py-20 relative ">
-        <img
+      <div className="container py-7 relative ">
+       <div className="absolute right-0 -top-40 flex flex-col items-center">
+         <img
           src={keyFeaturesAddImg}
           alt="img"
-          className="absolute right-0 -top-40"
+          className=""
         />
+        <img src={ArrowImg} alt="img" />
+       </div>
         <div className="flex flex-col items-center justify-star gap-12">
           <div className="relative ">
             <img src={NftHubImg} alt="img" className="" />

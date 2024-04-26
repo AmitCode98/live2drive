@@ -26,7 +26,7 @@ const NftMarketplace = () => {
       </div>
 
       {/* Cartype */}
-      <div className="container pt-20">
+      <div className="container pt-7">
         <h2 className="font-montserrat font-black text-5xl uppercase text-white">
           car type
         </h2>

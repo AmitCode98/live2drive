@@ -15,7 +15,7 @@ const Newsletter = () => {
           </p>
         </div>
         <div className="pt-9 flex justify-center gap-11 ">
-          <input type="text" className="text-white pl-5 w-[50%] bg-transparent rounded-md border-[0.1px] border-muted select-none outline-none " />
+          <input type="text" className="text-white pl-5 w-[50%] bg-transparent rounded-md border-[0.1px] border-muted select-none outline-non  " style={{ backgroundColor: 'rgba(217, 217, 217, 0.01)' }} />
           <Button buttonText={"join us"} variant={"gradient"} />
         </div>
       </div>

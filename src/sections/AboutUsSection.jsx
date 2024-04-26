@@ -47,19 +47,30 @@ import React from "react";
 import MarqueeContainer from "../components/MarqueeContainer";
 import AboutUsAddImg from "../assets/images/about-us-add-img.png";
 import AboutUsBgImg from "../assets/images/aboutUs-bg-img.png";
+import HeadingTextGradientColor from "../assets/images/heading-gradient-color.png";
+import ArrowRightImg from "../assets/images/arrow-right-img.png";
 
 const AboutUsSection = () => {
   return (
-    <section className="relative h-screen">
-      <MarqueeContainer marqueeText={"about us"} />
-      {/* <div className="flex  justify-end absolute top-0">
-        <div className="container flex gap-5 pt-36">
-          <img src={AboutUsAddImg} alt="img" className="" />
-          <div className="flex flex-col justify-between bg-red-30 w-3/5 ">
-            <h1 className="font-montserrat font-black text-6xl uppercase text-white">
+    <section className="relative h-[650px]">
+      <MarqueeContainer marqueeText={'about us'}/>
+      <img src={AboutUsBgImg} alt="img" className="absolute top-0 right-0" />
+     
+      <div className=" container flex gap-14 items-center py-20 absolute top-0 right-0 left-0">
+        <img src={AboutUsAddImg} alt="img" />
+        <div className="flex flex-col gap-20  w-[63%]">
+          <div className=" flex items-center justify-start">
+            <h1 className="font-montserrat font-black text-[60px] uppercase text-white relative">
               about us
             </h1>
-            <p className="font-montserrat font-medium text-2xl text-white leading-[52px]">
+            <img
+              src={HeadingTextGradientColor}
+              alt="img"
+              className="absolute left-0"
+            />
+          </div>
+          <div className="">
+            <p className="font-montserrat font-medium text-2xl text-white capitalize leading-[40px] ">
               Live2Drive is more than just a typical racing game, but rather a
               pioneering Web3.0 venture poised to revolutionize the gaming
               sector. It combines blockchain technology, futuristic themes, and
@@ -67,11 +78,12 @@ const AboutUsSection = () => {
               The document outlines the game's distinctive features, NFT
               characteristics, and the play-to-earn system it utilizes.
             </p>
+            <img src={ArrowRightImg} alt="img" />
           </div>
         </div>
-        <img src={AboutUsBgImg} alt="img" className="absolute right-0 top-0" />
-      </div> */}
-      
+        
+      </div>
+
     </section>
   );
 };
