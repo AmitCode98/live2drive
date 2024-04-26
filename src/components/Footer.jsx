@@ -53,6 +53,7 @@ const Footer = () => {
 
         {/* second column */}
         <div className="">
+          {/* footer three clumns */}
           <div className="flex gap-[170px] border-b border-muted py-7 px-5 ">
             {footerSections.map((section, index) => (
               <div key={index} className="flex flex-col gap-5  ">
@@ -73,7 +74,7 @@ const Footer = () => {
               </div>
             ))}
           </div>
-
+            {/* footer icon and compyright section */}
           <div className="flex items-center justify-between py-7 px-5 ">
             <div className="flex items-center gap-5">
               {[GitIcon,FacebookIcon,LinkedinIcon,InstagramIcon].map((icon,index)=>(
