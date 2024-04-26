@@ -10,10 +10,10 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-      {/* <AboutUsSection />
+      <AboutUsSection />
       <KeyFeatures/>
       <NftMarketplace/>
-      <Newsletter/> */}
+      <Newsletter/>
      
     </>
   );
