@@ -25,6 +25,30 @@
   border-image: var(--gradient-color) 1; /* Apply the gradient color as the border image */
   border-image-slice: 1; /* Define how the border image should be sliced */
 }
+/* 
+.button-style {
+  background: none;
+  border: 2px solid #DA00B7;
+  border-radius: 50%;
+  padding: 10px;
+  color: #DA00B7;
+  transition: all 0.3s ease; 
+}
+
+.button-style:hover {
+  background: linear-gradient(to right, #5E0616, #DA00B7);
+  color: #100D1F;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.button-style:focus {
+  outline: none;
+}
+
+.icon {
+  font-size: 20px;
+} */
 /* @layer base {
   :root {
     --primary: #100d1f;

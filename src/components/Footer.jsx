@@ -30,20 +30,20 @@ const Footer = () => {
   return (
     <footer className="pt-16  " style={{ backgroundColor: 'rgba(217, 217, 217, 0.01)' }}>
       {/* footer two column */}
-      <div className=" container py-10 flex items-end justify-between border-t border-muted">
+      <div className=" container py-10 flex  md:items-end md:justify-between border-t border-muted">
         {/* first column */}
-        <div className="flex flex-col gap-7 w-[26%] border-r border-muted p-10">
+        <div className="flex flex-col gap-7 w-[26%] md:border-r md:border-muted p-10 ">
           <div className="relative flex items-center justify-center">
-            <div className="h-[50px] w-[50px] absolute rounded-full bg-muted blur-[45px]"></div>
-            <img src={Logo} alt="company logo" className="relative z-20 " />
+            <div className="h-[50px] w-[50px] absolute rounded-full bg-muted blur-[45px] hidden md:block"></div>
+            <img src={Logo} alt="company logo" className="relative z-20 hidden md:block " />
           </div>
-          <p className="text-white text-base font-normal font-red-hat-display">
+          <p className="text-white text-base font-normal font-red-hat-display hidden md:block">
             In the mystical realm of Elysium, darkness is spreading, threatening
             to consume the once vibrant lands. As the chosen hero
           </p>
           <div className="flex items-center gap-7 ">
-            <img src={MatureLogo} alt="img" />
-            <div className="uppercase font-semibold text-base font-red-hat-display">
+            <img src={MatureLogo} alt="img" className="hidden md:block" />
+            <div className="uppercase font-semibold text-base font-red-hat-display hidden md:block">
               {['game','roadmap','blood',"vlolence"].map((item,index)=>(
                 <h5 key={index}>{item}</h5>
               ))}
@@ -52,9 +52,9 @@ const Footer = () => {
         </div>
 
         {/* second column */}
-        <div className="">
+        <div className="border">
           {/* footer three clumns */}
-          <div className="flex gap-[170px] border-b border-muted py-7 px-5 ">
+          <div className="flex flex-col items-center  md:flex-row md:gap-[170px] border-b border-muted py-7 px-5 ">
             {footerSections.map((section, index) => (
               <div key={index} className="flex flex-col gap-5  ">
                 <h5 className="font-red-hat-display font-extrabold text-base text-muted  ">
@@ -65,7 +65,7 @@ const Footer = () => {
                   {section.items.map((item, itemIndex) => (
                     <li
                       key={itemIndex}
-                      className="font-red-hat-display font-light text-base text-muted"
+                      className="font-red-hat-display font-light text-base text-muted hidden md:block"
                     >
                       {item}
                     </li>
@@ -75,7 +75,7 @@ const Footer = () => {
             ))}
           </div>
             {/* footer icon and compyright section */}
-          <div className="flex items-center justify-between py-7 px-5 ">
+          <div className="flex flex-col md:flex-row items-center justify-between py-7 px-5 ">
             <div className="flex items-center gap-5">
               {[GitIcon,FacebookIcon,LinkedinIcon,InstagramIcon].map((icon,index)=>(
                 <img key={index} src={icon} alt="icon" />

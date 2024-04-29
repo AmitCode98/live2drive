@@ -11,7 +11,7 @@ const CarCard = ({
   bnbAmount,
 }) => {
   return (
-    <div className="p-6 border border-[#C2C2C2] rounded-[30px] ">
+    <div className="p-6 border border-[#C2C2C2] rounded-[30px]">
       <div className="flex flex-col gap-4 relative">
         {/* heart icon */}
         <img
@@ -20,7 +20,7 @@ const CarCard = ({
           alt="Heart Icon"
         />
         <img src={imgSrc} alt="Car Image" />
-        <h1 className="text-white text-center font-montserrat font-black text-3xl uppercase">
+        <h1 className="text-white text-center font-montserrat font-black text-xl lg:text-3xl uppercase">
           {title}
         </h1>
 
@@ -74,9 +74,8 @@ const CarCard = ({
             </div>
           </div>
         </div>
-
         {/* Button Section */}
-        <button className="py-2 px-4 text-white bg-gradient-to-r from-[#5E0616] to-[#DA00B7] self-end rounded-[8px] uppercase font-bold text-sm flex justify-center items-center gap-[10px]">
+        <button className="py-2 px-4 text-white bg-gradient-to-r from-[#5E0616] to-[#DA00B7]  rounded-[8px] uppercase font-bold text-sm flex justify-center items-center gap-[10px] self-center md:self-end">
           <img src={BnbIcon} alt="Bnb Icon" />
           {bnbAmount} bnb
         </button>

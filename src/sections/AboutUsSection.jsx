@@ -49,18 +49,30 @@ import AboutUsAddImg from "../assets/images/about-us-add-img.png";
 import AboutUsBgImg from "../assets/images/aboutUs-bg-img.png";
 import HeadingTextGradientColor from "../assets/images/heading-gradient-color.png";
 import ArrowRightImg from "../assets/images/arrow-right-img.png";
+import MobileAboutUsBgImg from "../assets/images/mobile-about-us-bg-img.png";
+import MobileAboutUsAddImg from "../assets/images/mobile-about-us-add-img.png";
 
 const AboutUsSection = () => {
+  // h-[650px]
   return (
-    <section className="relative h-[650px]">
-      <MarqueeContainer marqueeText={'about us'}/>
-      <img src={AboutUsBgImg} alt="img" className="absolute top-0 right-0" />
-     
-      <div className=" container flex gap-14 items-center py-20 absolute top-0 right-0 left-0">
-        <img src={AboutUsAddImg} alt="img" />
-        <div className="flex flex-col gap-20  w-[63%]">
-          <div className=" flex items-center justify-start">
-            <h1 className="font-montserrat font-black text-[60px] uppercase text-white relative">
+    <section className="relative">
+      <MarqueeContainer marqueeText={"about us"} />
+      <img
+        src={AboutUsBgImg}
+        alt="img"
+        className="absolute top-0 right-0 hidden xl:block md:w-[450px]"
+      />
+      <img
+        src={MobileAboutUsBgImg}
+        alt="img"
+        className="md:hidden mt-[450px] right-0 "
+      />
+
+      <div className=" container absolute flex md:gap-14 items-center justify-center md:justify-start py-14 md:py-20  top-0 right-0 left-0">
+        <img src={AboutUsAddImg} alt="img" className="hidden md:block" />
+        <div className="flex flex-col  gap-10 md:gap-20 w-[317px] md:w-[80%] lg:w-[63%] 2xl:w-[80%]">
+          <div className=" flex items-center justify-center md:justify-start">
+            <h1 className="font-montserrat font-black text-[26px] md:text-[60px] uppercase text-white relative">
               about us
             </h1>
             <img
@@ -70,20 +82,23 @@ const AboutUsSection = () => {
             />
           </div>
           <div className="">
-            <p className="font-montserrat font-medium text-2xl text-white capitalize leading-[40px] ">
+            <p className=" text-base md:text-2xl text-white font-montserrat font-medium  capitalize leading-[33px] md:leading-[40px] text-center md:text-start">
               Live2Drive is more than just a typical racing game, but rather a
               pioneering Web3.0 venture poised to revolutionize the gaming
               sector. It combines blockchain technology, futuristic themes, and
               a play-to-earn model to offer an unprecedented gaming experience.
               The document outlines the game's distinctive features, NFT
               characteristics, and the play-to-earn system it utilizes.
+            <img src={ArrowRightImg} alt="img" className="hidden md:block" />
             </p>
-            <img src={ArrowRightImg} alt="img" />
+            <img
+              src={MobileAboutUsAddImg}
+              alt="img"
+              className=" md:hidden pt-6"
+            />
           </div>
         </div>
-        
       </div>
-
     </section>
   );
 };

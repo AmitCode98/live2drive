@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import MarqueeContainer from "../components/MarqueeContainer";
 import CarImg1 from "../assets/images/car-img1.png";
 import CarImg2 from "../assets/images/car-img2.png";
@@ -9,23 +10,46 @@ import ElectroSystemImg from "../assets/images/electro-system-img.png";
 import TurboRunnerImg from "../assets/images/turbo-runner-img.png";
 import CarCard from "../components/CarCard";
 import HandlingCard from "../components/HandlingCard";
+import HeadingTextGradientColor from "../assets/images/heading-gradient-color.png";
+import MobileSliderArrowLeftNormalStateButtonimg from "../assets/images/mobile-slider-arrow-left-normal-state-button-img.png";
+import MobileSliderArrowLeftHoverStateButtonimg from "../assets/images/mobile-slider-arrow-left-hover-state-button-img.png";
+import MobileSliderArrowRightNormalButtonimg from "../assets/images/mobile-slider-arrow-right-normal-state-button-img.png";
+import MobileSliderArrowRightHoverStateButtonimg from "../assets/images/mobile-slider-arrow-right-hover-state-button-img.png";
+
 
 const NftMarketplace = () => {
+  const [isLeftActive, setIsLeftActive] = useState(false);
+  const [isRightActive, setIsRightActive] = useState(false);
+
+  const handleLeftButtonClick = () => {
+    setIsLeftActive(true);
+    setIsRightActive(false);
+  };
+
+  const handleRightButtonClick = () => {
+    setIsRightActive(true);
+    setIsLeftActive(false);
+  };
   return (
     <section className="relative">
       <div className="relative flex items-center justify-center">
         <MarqueeContainer marqueeText={"nft marketplace"} />
-        <h1 className="font-montserrat font-black text-6xl leading-[64px] text-white uppercase absolute">
+        <h1 className="font-montserrat font-black text-[26px] md:text-6xl leading-[64px] text-white uppercase absolute">
           nft marketplace
         </h1>
+        <img
+          src={HeadingTextGradientColor}
+          alt="Heading Gradient"
+          className="absolute"
+        />
       </div>
 
       {/* Cartype */}
-      <div className="container pt-7">
-        <h2 className="font-montserrat font-black text-5xl uppercase text-white">
+      <div className="container pt-7 flex flex-col items-center md:items-start">
+        <h2 className="font-montserrat font-black text-xl md:text-5xl uppercase text-center md:text-start text-white">
           car type
         </h2>
-        <div className="flex justify-between gap-16 w-full py-10 ">
+        <div className="flex flex-col md:flex-row justify-between gap-4 xl:gap-16 w-full py-10 ">
           {/* Card */}
           <CarCard
             imgSrc={CarImg1}
@@ -45,12 +69,34 @@ const NftMarketplace = () => {
           />
           <CarCard
             imgSrc={CarImg3}
-            title="CHIMERA"
+            title="UNDERTAKER"
             speedPercentage="56%"
             handlingPercentage="56%"
             hooveringPercentage="66%"
             bnbAmount="222.3"
           />
+        </div>
+        <div className="flex gap-2">
+          <button onClick={handleLeftButtonClick} className="md:hidden">
+            <img
+              src={
+                isLeftActive
+                  ? MobileSliderArrowLeftHoverStateButtonimg
+                  : MobileSliderArrowLeftNormalStateButtonimg
+              }
+              alt="left-arrow"
+            />
+          </button>
+          <button onClick={handleRightButtonClick} className="md:hidden">
+            <img
+              src={
+                isRightActive
+                  ? MobileSliderArrowRightHoverStateButtonimg
+                  : MobileSliderArrowRightNormalButtonimg
+              }
+              alt="right-arrow"
+            />
+          </button>
         </div>
       </div>
 
@@ -60,13 +106,13 @@ const NftMarketplace = () => {
         <img
           src={HandlingBgImg}
           alt="img"
-          className=" absolute -top-[550px] -z-20"
+          className=" absolute -top-[550px] -z-20 hidden md:block"
         />
-        <div className="container pt-20">
-          <h2 className="font-montserrat font-black text-5xl uppercase text-white">
+        <div className="container pt-20 hidden md:block">
+          <h2 className="font-montserrat font-black text-xl md:text-5xl uppercase text-center md:text-start text-white">
             handling
           </h2>
-          <div className="flex justify-between gap-16 w-full py-10 ">
+          <div className="flex flex-col md:flex-row justify-between gap-4 xl:gap-16 w-full py-10">
             {/* Card */}
             <HandlingCard
               imgSrc={DiskBrakeImg}
