@@ -11,7 +11,7 @@ const CarCard = ({
   bnbAmount,
 }) => {
   return (
-    <div className="p-6 border border-[#C2C2C2] rounded-[30px]">
+    <div className="w-full p-6 border border-[#C2C2C2] rounded-[30px]">
       <div className="flex flex-col gap-4 relative">
         {/* heart icon */}
         <img

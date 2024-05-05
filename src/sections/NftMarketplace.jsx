@@ -15,7 +15,10 @@ import MobileSliderArrowLeftNormalStateButtonimg from "../assets/images/mobile-s
 import MobileSliderArrowLeftHoverStateButtonimg from "../assets/images/mobile-slider-arrow-left-hover-state-button-img.png";
 import MobileSliderArrowRightNormalButtonimg from "../assets/images/mobile-slider-arrow-right-normal-state-button-img.png";
 import MobileSliderArrowRightHoverStateButtonimg from "../assets/images/mobile-slider-arrow-right-hover-state-button-img.png";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const NftMarketplace = () => {
   const [isLeftActive, setIsLeftActive] = useState(false);
@@ -49,8 +52,56 @@ const NftMarketplace = () => {
         <h2 className="font-montserrat font-black text-xl md:text-5xl uppercase text-center md:text-start text-white">
           car type
         </h2>
-        <div className="flex flex-col md:flex-row justify-between gap-4 xl:gap-16 w-full py-10 ">
+
+
+        {/* mobile slider card  */}
+        {/* <Swiper
+          spaceBetween={50}
+          modules={[Navigation]}
+          className=" md:hidden"
+          loop
+          navigation={{
+            prevEl: ".slide-prev",
+            nextEl: ".slide-next",
+          }}
+          // onSlideChange={() => console.log('slide change')}
+          // onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide className="">
+            <CarCard
+              imgSrc={CarImg1}
+              title="CHIMERA"
+              speedPercentage="56%"
+              handlingPercentage="36%"
+              hooveringPercentage="86%"
+              bnbAmount="222.3"
+            />
+          </SwiperSlide>
+          <SwiperSlide className="">
+            <CarCard
+              imgSrc={CarImg1}
+              title="CHIMERA"
+              speedPercentage="56%"
+              handlingPercentage="36%"
+              hooveringPercentage="86%"
+              bnbAmount="222.3"
+            />
+          </SwiperSlide>
+          <SwiperSlide className="">
+            <CarCard
+              imgSrc={CarImg1}
+              title="CHIMERA"
+              speedPercentage="56%"
+              handlingPercentage="36%"
+              hooveringPercentage="86%"
+              bnbAmount="222.3"
+            />
+          </SwiperSlide>
+        </Swiper> */}
+
+        <div className="max-md:hidden flex flex-col md:flex-row justify-between gap-4 xl:gap-16 w-full py-10 ">
           {/* Card */}
+
           <CarCard
             imgSrc={CarImg1}
             title="CHIMERA"
@@ -59,6 +110,7 @@ const NftMarketplace = () => {
             hooveringPercentage="86%"
             bnbAmount="222.3"
           />
+
           <CarCard
             imgSrc={CarImg2}
             title="BONBON"
@@ -67,6 +119,7 @@ const NftMarketplace = () => {
             hooveringPercentage="36%"
             bnbAmount="222.3"
           />
+
           <CarCard
             imgSrc={CarImg3}
             title="UNDERTAKER"
@@ -76,8 +129,12 @@ const NftMarketplace = () => {
             bnbAmount="222.3"
           />
         </div>
+
         <div className="flex gap-2">
-          <button onClick={handleLeftButtonClick} className="md:hidden">
+          <button
+            onClick={handleLeftButtonClick}
+            className="md:hidden slide-prev"
+          >
             <img
               src={
                 isLeftActive
@@ -87,7 +144,10 @@ const NftMarketplace = () => {
               alt="left-arrow"
             />
           </button>
-          <button onClick={handleRightButtonClick} className="md:hidden">
+          <button
+            onClick={handleRightButtonClick}
+            className="md:hidden slide-next"
+          >
             <img
               src={
                 isRightActive

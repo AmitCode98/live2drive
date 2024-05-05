@@ -2,13 +2,13 @@ import React from "react";
 import MarqueeContainer from "../components/MarqueeContainer";
 import HeadingTextGradientColor from "../assets/images/heading-gradient-color.png";
 import NftHubImg from "../assets/images/nft-hub-img.png";
-import BaseCarsImg from "../assets/images/base-cars-img.png";
-import FuturisticEnvironmentImg from "../assets/images/futuristic-environment-img.png";
+import BaseCarsImg from "../assets/NewImages/base-cars-img.png";
+import FuturisticEnvironmentImg from "../assets/NewImages/futuristic-environment-img.png";
 import keyFeaturesAddImg from "../assets/images/key-features-add-img.png";
 import ArrowImg from "../assets/images/arrow-top-img.png";
 import MobileNftHubImg from "../assets/images/mobile-nft-hub-img.png";
-import MobileBaseCarsImg from "../assets/images/mobile-base-cars-img.png";
-import MobileFuturisticEnvironmentImg from "../assets/images/mobile-futuristic-environment-img.png";
+import MobileBaseCarsImg from "../assets/NewImages/mobile-base-cars-img.png";
+import MobileFuturisticEnvironmentImg from "../assets/NewImages/mobile-futuristic-environment-img.png";
 
 const features = [
   {

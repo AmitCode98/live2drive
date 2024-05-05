@@ -25,6 +25,20 @@
   border-image: var(--gradient-color) 1; /* Apply the gradient color as the border image */
   border-image-slice: 1; /* Define how the border image should be sliced */
 }
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.arrow img {
+  animation: slideAnimation 0.5s ease forwards;
+}
 /* 
 .button-style {
   background: none;

@@ -1,5 +1,5 @@
 import React from "react";
-import HeroBgImg from "../assets/images/hero-bg-img2.png";
+import HeroBgImg from "../assets/NewImages/hero-bg-img.png";
 import Button from "../components/Button";
 import LogoForMobile from "../assets/icons/logo-mobile.svg";
 // import HeroHeadingShadowImg from '../assets/images/hero-ellips-img.png'
